@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(201, 202, 202);
+        }
+        h1{
+        
+            text-align: center;
+          
+
+        }
+        .online-shopping-container{
+            
+            max-width: 800px;
+            margin: 10px auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0  rgb(192, 191, 191);
+
+        }
+        h2{
+            margin: 10px 0px;
+        }
+        .product-row{
+            display: flex;
+            justify-content: space-between;
+            border:1px solid  black;
+            border-radius:5px;
+            padding:10px;
+            align-items: center;
+            margin:10px 0px;
+            
+        }
+          button{
+            background-color: rgb(35, 133, 208);
+            border-radius: 5px;
+            border:none;
+            padding:10px 20px;
+            color:white;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(68, 133, 225);
+        }
+        #feedback{
+            position: fixed;
+            top:10px;
+            right:30px;
+            padding:10px ;
+            display:none ;
+            background-color: white;
+            color: white;
+        }
+        #totalprice{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="online-shopping-container">
+       
+        <h1>Online Shopping</h1>
+        <p id="feedback"></p>
+        <h2>Avaiable Products</h2>
+        <div class="product-container" id="productcontainer">
+            
+        </div>
+        <h2>My Cart</h2>
+        <div id="cartcontainer"></div>
+        <h2 id="totalprice">Rs.0</h2>
+        <h2>Actions</h2>
+        <button id="sortbyprice">sort by price</button>
+        <button id="clearcart">clear cart</button>
+    </div>
+    
+    <script src="online.js"></script>
+</body>
+</html>
